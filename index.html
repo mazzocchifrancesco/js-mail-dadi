@@ -10,26 +10,52 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="bg-light">
     <div class="container">
 
         <div class="row mt-4">
             <div class="col-12 text-center">
-                <h1 class="text-white">DADI</h1>
+                <h1 class="mb-5">LOGIN</h1>
 
             </div>
         </div>
         <div class="row justify-content-center">
             <div id="box" class="col-6 d-flex gap-1">
+
+                <!-- input box -->
                 <span class="input-group-text" id="basic-addon1">@</span>
                 <input id="userMail" type="text" class="form-control" placeholder="Username" aria-label="Username"
                     aria-describedby="basic-addon1">
+
                 <button id="send" type="button" class="btn btn-primary">Invia</button>
+
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-6">
+        <div class="row justify-content-center mt-3">
+            <div class="col-6 text-center fw-bold">
                 <p id="message"></p>
+            </div>
+        </div>
+
+        <!------------------------- dadi -------------------------------------------->
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <h1 class="mb-5">DADI</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-6 text-center fw-bold">
+                <button id="start" type="button" class="btn btn-primary">Avvia il gioco</button>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-6 text-center">
+                <div class="d-flex justify-content-around">
+                    <div id="myDice"></div>
+                    <div id="pcDice"></div>
+                </div>
+
+                <p id="messageDice" class="fw-bold"></p>
             </div>
         </div>
     </div>
